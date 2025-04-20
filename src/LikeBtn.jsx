@@ -8,7 +8,8 @@ export default function LikeBtn(){
         isbtnClicked(!btnClicked);
     }
     let styles = {
-        margin: "10px"
+        margin: "10px",
+        color: "red"
     }
 
     return (
