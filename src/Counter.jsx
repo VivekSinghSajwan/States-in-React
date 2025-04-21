@@ -8,6 +8,9 @@ function Counter(){
     function inCount(){
         setCount(count+1);
     }
+    function decCount(){
+        setCount(count-1);
+    }
 
     return (
         <div>
@@ -15,9 +18,13 @@ function Counter(){
                 {console.log("✅ Component rendered inside H1")}
                 States in React
             </h1>
+            <h2>Count : {count}</h2>
             <button onClick={inCount}>
-                {console.log("✅ Component rendered inside btn")}
-                Count: {count}
+                Increement
+            </button>
+            &nbsp;
+            <button onClick={decCount}>
+                Decreement
             </button>
         </div>
     )
