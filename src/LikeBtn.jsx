@@ -14,7 +14,7 @@ export default function LikeBtn(){
 
     return (
         <button onClick={isClicked} style={styles}>
-            {btnClicked ? <i class="fa-regular fa-heart"></i> : <i class="fa-solid fa-heart"></i>}
+            {btnClicked ? <i className="fa-regular fa-heart"></i> : <i class="fa-solid fa-heart"></i>}
         </button>
     )
 }
