@@ -9,11 +9,15 @@ function Counter(){
         setCount(count+1);
     }
     function decCount(){
-        setCount(count-1);
+        if (count>0)
+            setCount(count-1);
+        else
+            alert("Value below 0");
     }
 
     return (
         <div>
+            {console.log(count)}
             <h1>
                 {console.log("✅ Component rendered inside H1")}
                 States in React
