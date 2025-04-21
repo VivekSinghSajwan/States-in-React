@@ -22,10 +22,12 @@ function Counter(){
             <button onClick={inCount}>
                 Increement
             </button>
+            {console.log("🧪 Below increment button")}
             &nbsp;
             <button onClick={decCount}>
                 Decreement
             </button>
+            {console.log("🧪 Below decrement button")}
         </div>
     )
 }
